@@ -1,4 +1,9 @@
-# Logs
+# Dependency directories
+node_modules/
+jspm_packages/
+web_modules/
+
+# Logs and runtime data
 logs
 *.log
 npm-debug.log*
@@ -6,23 +11,44 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
+pids
+*.pid
+*.seed
+*.pid.lock
 
-node_modules
-dist
-dist-ssr
-*.local
-.env
-.env.local
-.env.*.local
+# Test and Coverage
+coverage
+*.lcov
+.nyc_output
 
-# Editor directories and files
+# Build and Output directories
+dist/
+dist-ssr/
+build/
+out/
+.next/
+.nuxt/
+.vercel/
+.cache/
+.serverless/
+
+# IDE and Editor files
 .vscode/*
 !.vscode/extensions.json
-.idea
-.DS_Store
+.idea/
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+.DS_Store
+Thumbs.db
 
+# Environment and Local configuration files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.*.local
+*.local
